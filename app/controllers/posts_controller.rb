@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   end
   
   def create 
-    @post = Post.new(post_params[:id])
+    @post = Post.new(post_params)
     if @post.save
       redirect_to root_path
     else
@@ -44,6 +44,4 @@ class PostsController < ApplicationController
   def find_post
     @post = Post.find(params[:id])
   end
-end
-  
 end

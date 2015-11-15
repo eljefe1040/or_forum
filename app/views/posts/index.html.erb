@@ -1,0 +1,10 @@
+<h1>The Sterile Forum</h2>
+<p>An online surgical community for those of us who spend our lives in and around the sterile field </p>
+
+<% @posts.each do |post| %>
+<h2><%= post.title %></h2>
+<p>Post created <%= time_ago_in_words(post.created_at)%> ago</p>
+<!-- add created by user portion to time also -->
+<% end %>
+
+<%= link_to 'New Post', new_post_path, class:"btn btn-default" %>
