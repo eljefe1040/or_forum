@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # added gems
 gem 'simple_form', '~> 3.2'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
+gem 'devise', '~> 3.5', '>= 3.5.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

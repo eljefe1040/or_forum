@@ -1,10 +1,9 @@
-<h1>The O.R. Forum</h2>
-<p>An online surgical community for those of us who spend our lives in and around the sterile field </p>
 
+<div class="col-md-8 col-md-offset-2">
 <% @posts.each do |post| %>
 <h2><%= link_to post.title, post_path(post) %></h2>
 <p>Post created <%= time_ago_in_words(post.created_at)%> ago</p>
 <!-- add created by user portion to time also -->
 <% end %>
-
+<br>
 <%= link_to 'New Post', new_post_path, class:"btn btn-default" %>
