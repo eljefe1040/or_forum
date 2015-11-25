@@ -3,6 +3,7 @@
 <% @posts.each do |post| %>
 <h2><%= link_to post.title, post_path(post) %></h2>
 <p>Post created <%= time_ago_in_words(post.created_at)%> ago</p>
+<p><%=post.comments.count%> comments</p>
 <!-- add created by user portion to time also -->
 <% end %>
 <br>
